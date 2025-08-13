@@ -3,137 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Terra Milankovic</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background-color: #F5F5F0;
-      color: #2E3D32;
-    }
-    header {
-      background-image: url('https://source.unsplash.com/1600x900/?mediterranean,landscape');
-      background-size: cover;
-      background-position: center;
-      height: 80vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: #F5F5F0;
-    }
-    header h1 {
-      font-size: 4em;
-      margin: 0;
-      letter-spacing: 2px;
-    }
-    header p {
-      font-size: 1.5em;
-      margin-top: 20px;
-      font-style: italic;
-    }
-    nav {
-      background-color: #A3C9A8;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #2E3D32;
-      font-weight: 400;
-    }
-    section {
-      max-width: 1000px;
-      margin: 60px auto;
-      padding: 0 20px;
-    }
-    section h2 {
-      font-size: 2em;
-      margin-bottom: 20px;
-      color: #2E3D32;
-    }
-    section p {
-      font-size: 1.2em;
-      line-height: 1.6;
-    }
-    .portfolio {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-    }
-    .portfolio img {
-      width: 100%;
-      border-radius: 8px;
-      border: 4px solid #D8CAB8;
-    }
-    footer {
-      background-color: #2E3D32;
-      color: #F5F5F0;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-    }
-  </style>
+  <title>Terra Milanković</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <header>
-    <h1>Terra Milankovic</h1>
-    <p>Prostor ne mora da govori — on treba da zasija.</p>
+    <div class="logo">
+      <img src="assets/logo/tm-logo.svg" alt="Terra Milanković Logo" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#o-projektu">O projektu</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#inspiracija">Inspiracija</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#onama">O nama</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#inspiracija">Inspiracija</a>
-    <a href="#kontakt">Kontakt</a>
-  </nav>
+  <section class="hero">
+    <div class="overlay">
+      <h1>Terra Milanković</h1>
+      <p>Svetlost. Kamen. Tišina.</p>
+    </div>
+  </section>
 
-  <section id="onama">
-    <h2>O nama</h2>
-    <p>Svetlost, kamen, dalmatinska tišina. Neuro4design je prostor gde se estetika susreće sa proporcijom, gde se digitalno i fizičko stapaju u harmoniju.</p>
+  <section id="o-projektu">
+    <h2>O projektu</h2>
+    <p>
+      Terra Milanković je prostor aristokratske proporcije, oblikovan svetlošću Dalmacije i tišinom pejzaža. Inspirisan vilama, kapijama i mediteranskim vrtovima, ovaj projekat spaja rustični luksuz sa savremenom elegancijom.
+    </p>
   </section>
 
   <section id="portfolio">
     <h2>Portfolio</h2>
-    <div class="portfolio">
-      <img src="https://source.unsplash.com/600x400/?stone,gate" alt="Kapija">
-      <img src="https://source.unsplash.com/600x400/?interior,kitchen" alt="Kuhinja">
-      <img src="https://source.unsplash.com/600x400/?landscape,dalmatia" alt="Pejzaž">
+    <div class="grid">
+      <img src="assets/images/baljci-01.jpg" alt="Kapija u Baljcima" />
+      <img src="assets/images/baljci-02.jpg" alt="Pejzaž Dalmacije" />
+      <img src="assets/images/baljci-03.jpg" alt="Detalj kamena i svetlosti" />
     </div>
-  </section>
-
-  <section>
-    <h2>🕊️ Tišina maslina u podne</h2>
-    <p>Mir pod krošnjama maslina, svetlost u zenitu, prostor koji diše bez reči.</p>
-  </section>
-
-  <section>
-    <h2>🌞 Svetlost koja ćuti među suhozidima</h2>
-    <p>Suhozidi kao senke prošlosti, svetlost koja ne govori — samo obasjava.</p>
-  </section>
-
-  <section>
-    <h2>🌬️ Kamen koji pamti vetar</h2>
-    <p>Vetar koji šapuće kroz pukotine kamena, elegancija trajanja i tišine.</p>
   </section>
 
   <section id="inspiracija">
     <h2>Inspiracija</h2>
-    <p>Aristokratske vile, mediteranski vrtovi, teksture koje nose vreme. Uskoro dodajemo galeriju inspiracija koje oblikuju naš rad.</p>
+    <p>
+      Vila u kamenu, maslinovo drvo, mediteranski vrt — svaki element nosi proporciju i tišinu. Uskoro dodajemo arhiv autentičnih slika koje oblikuju našu viziju.
+    </p>
   </section>
 
   <section id="kontakt">
     <h2>Kontakt</h2>
-    <p>Piši nam na <a href="mailto:neuro4design@gmail.com">neuro4design@gmail.com</a> ili nas pronađi na Instagramu @neuro4design</p>
+    <p>Za saradnju, pitanja ili inspiraciju: <a href="mailto:info@terramilankovic.com">info@terramilankovic.com</a></p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Terra Milankovic. Sva prava zadržana.</p>
+    <p>&copy; 2025 Terra Milanković</p>
   </footer>
-
 </body>
 </html>
